@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Google Tag Manager -->
-
-    <head> <meta name="google-site-verification" content="xpNuD37AmS33xv0-2qye3zBuCtzZuk5ZD18YlWDTDTM" />
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Vivid Visual Solutions - Creative Design Agency</title>
+    <title>Vivid Visual Solutions - Creative Design Agency | Graphic Design, Web Development</title>
+    <meta name="description" content="Creative agency specializing in stunning visual solutions, graphic design, web development, and branding services that elevate brands and captivate audiences.">
+    <meta name="keywords" content="creative agency, graphic design, web development, branding, visual solutions, digital marketing, UI/UX design">
+    <meta name="author" content="Vivid Visual Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.vividvisualsolutions.kesug.com/">
+    
+    <!-- Open Graph / Twitter Cards -->
+    <meta property="og:title" content="Vivid Visual Solutions - Creative Design Agency">
+    <meta property="og:description" content="We are a creative agency specializing in stunning visual solutions that elevate brands and captivate audiences.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80">
+    <meta property="og:url" content="https://www.yourdomain.com/">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vivid Visual Solutions - Creative Design Agency">
+    <meta name="twitter:description" content="We are a creative agency specializing in stunning visual solutions that elevate brands and captivate audiences.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vivid Visual Solutions",
+      "description": "Creative agency specializing in stunning visual solutions that elevate brands and captivate audiences.",
+      "url": "https://www.yourdomain.com/",
+      "telephone": "+2348061151951",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ikeja",
+        "addressLocality": "Lagos",
+        "addressCountry": "Nigeria"
+      },
+      "serviceType": "Graphic Design, Web Development, Video Production, Photography, Digital Marketing, UI/UX Design",
+      "areaServed": "Worldwide",
+      "sameAs": [
+        "https://twitter.com/yourprofile",
+        "https://facebook.com/yourprofile",
+        "https://instagram.com/yourprofile",
+        "https://linkedin.com/company/yourprofile"
+      ]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K4FK38QX');</script>
-<!-- End Google Tag Manager -->
     <style>
         /* Base styles and reset */
         * {
@@ -185,9 +223,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             overflow: hidden;
         }
         
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;
+            z-index: -1;
+            animation: backgroundZoom 20s infinite alternate ease-in-out;
+        }
+        
         .hero-content {
             max-width: 600px;
             z-index: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
         
         .hero-content h1 {
@@ -209,16 +263,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             animation: slideInLeft 1.4s ease;
         }
         
-        .hero-image {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 50%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80') no-repeat center right/cover;
-            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-        }
-        
         /* Services Section */
         .services-grid {
             display: grid;
@@ -233,12 +277,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             opacity: 0;
-            transform: translateX(50px);
+            transform: translateX(100px);
         }
         
         .service-card.animate {
             opacity: 1;
             transform: translateX(0);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .service-card:hover {
@@ -261,12 +306,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         /* Portfolio Section */
         .portfolio {
             background: var(--light);
+            overflow: hidden;
         }
         
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        .portfolio-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .portfolio-track {
+            display: flex;
+            width: calc(300px * 12); /* Double the items for seamless loop */
+            animation: scrollHorizontally 60s linear infinite;
         }
         
         .portfolio-item {
@@ -274,13 +326,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             border-radius: 10px;
             overflow: hidden;
             height: 300px;
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        
-        .portfolio-item.animate {
-            opacity: 1;
-            transform: translateX(0);
+            width: 300px;
+            margin: 0 15px;
+            flex-shrink: 0;
         }
         
         .portfolio-img {
@@ -336,12 +384,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .about-image {
             position: relative;
             opacity: 0;
-            transform: translateX(-50px);
+            transform: translateX(-100px);
         }
         
         .about-image.animate {
             opacity: 1;
             transform: translateX(0);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .about-image img {
@@ -360,6 +409,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             top: -20px;
             left: -20px;
             z-index: -1;
+        }
+        
+        .about-text {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        
+        .about-text.animate {
+            opacity: 1;
+            transform: translateX(0);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .about-text h2 {
@@ -397,12 +457,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             text-align: center;
             opacity: 0;
-            transform: translateX(50px);
+            transform: translateX(100px);
         }
         
         .testimonial-item.animate {
             opacity: 1;
             transform: translateX(0);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .testimonial-text {
@@ -425,12 +486,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         .contact-info {
             opacity: 0;
-            transform: translateX(-50px);
+            transform: translateX(-100px);
         }
         
         .contact-info.animate {
             opacity: 1;
             transform: translateX(0);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .contact-info-item {
@@ -447,12 +509,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         .contact-form {
             opacity: 0;
-            transform: translateX(50px);
+            transform: translateX(100px);
         }
         
         .contact-form.animate {
             opacity: 1;
             transform: translateX(0);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .form-group {
@@ -484,6 +547,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
+        }
+        
+        .footer-col {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        
+        .footer-col.animate {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .footer-col h3 {
@@ -571,6 +645,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
         
+        @keyframes backgroundZoom {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+        
+        @keyframes scrollHorizontally {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-300px * 6)); /* Move by half the width */
+            }
+        }
+        
+        /* Performance Optimizations */
+        .hero::before {
+            will-change: transform;
+        }
+        
+        .portfolio-track {
+            will-change: transform;
+        }
+        
         /* Responsive Design */
         @media (max-width: 992px) {
             .hero-content h1 {
@@ -617,14 +718,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 font-size: 2.5rem;
             }
             
-            .hero-image {
-                width: 100%;
-                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-                opacity: 0.2;
+            .hero-content {
+                padding: 20px;
             }
             
             .hero-btns {
                 flex-direction: column;
+            }
+            
+            .portfolio-track {
+                animation-duration: 40s;
             }
         }
         
@@ -642,14 +745,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 opacity: 1;
                 transform: translateX(0);
             }
+            
+            .portfolio-item {
+                width: 250px;
+            }
+            
+            .portfolio-track {
+                width: calc(250px * 12);
+                animation-duration: 35s;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4FK38QX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     <!-- Header & Navigation -->
     <header id="header">
         <div class="container">
@@ -682,7 +790,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </div>
-        <div class="hero-image"></div>
     </section>
 
     <!-- Services Section -->
@@ -746,26 +853,115 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2>Our Portfolio</h2>
                 <p>Take a look at some of our recent projects and see how we've helped businesses like yours succeed.</p>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Web Design Project" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <h3>E-commerce Website</h3>
-                        <p>Complete website redesign for a fashion retailer resulting in 40% increased conversions.</p>
+            <div class="portfolio-container">
+                <div class="portfolio-track">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="E-commerce Website Design" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Website</h3>
+                            <p>Complete website redesign for a fashion retailer resulting in 40% increased conversions.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Design Project" class="portfolio-img">
-<div class="portfolio-overlay">
-                        <h3>Brand Identity</h3>
-                        <p>Complete brand identity package for a tech startup including logo, style guide, and marketing materials.</p>
+                    
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Brand Identity Design" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Complete brand identity package for a tech startup including logo, style guide, and marketing materials.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="App Design Project" class="portfolio-img">
-                    <div class="portfolio-overlay"> 
-                        <h3>Mobile App UI</h3>
-                        <p>User interface design for a fitness tracking application with over 100,000 downloads.</p>
+                    
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mobile App UI Design" class="portfolio-img">
+                        <div class="portfolio-overlay"> 
+                            <h3>Mobile App UI</h3>
+                            <p>User interface design for a fitness tracking application with over 100,000 downloads.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Corporate Branding" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Branding</h3>
+                            <p>Complete rebranding for financial services company including logo, stationery, and brand guidelines.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Restaurant Website" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Restaurant Website</h3>
+                            <p>Responsive website design for a fine dining restaurant with online reservation system.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Digital Marketing Campaign" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Marketing Campaign</h3>
+                            <p>Social media marketing campaign that increased engagement by 200% for a beauty brand.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate items for seamless loop -->
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="E-commerce Website Design" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Website</h3>
+                            <p>Complete website redesign for a fashion retailer resulting in 40% increased conversions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Brand Identity Design" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Complete brand identity package for a tech startup including logo, style guide, and marketing materials.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mobile App UI Design" class="portfolio-img">
+                        <div class="portfolio-overlay"> 
+                            <h3>Mobile App UI</h3>
+                            <p>User interface design for a fitness tracking application with over 100,000 downloads.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Corporate Branding" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Branding</h3>
+                            <p>Complete rebranding for financial services company including logo, stationery, and brand guidelines.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Restaurant Website" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Restaurant Website</h3>
+                            <p>Responsive website design for a fine dining restaurant with online reservation system.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Digital Marketing Campaign" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3>Marketing Campaign</h3>
+                            <p>Social media marketing campaign that increased engagement by 200% for a beauty brand.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -781,7 +977,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Our Team">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Our Creative Team at Vivid Visual Solutions">
                 </div>
                 <div class="about-text">
                     <h2>We Create Solutions That Inspire</h2>
@@ -925,8 +1121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 Vivid Visual Solutions. All Rights Reserved. | Designed by Adenaike Victor</p>
-            
-             </div>
+            </div>
         </div>
     </footer>
 
@@ -951,7 +1146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         // Scroll Animations
         function checkScroll() {
-            const elements = document.querySelectorAll('.service-card, .portfolio-item, .about-image, .testimonial-item, .contact-info, .contact-form');
+            const elements = document.querySelectorAll('.service-card, .about-image, .about-text, .testimonial-item, .contact-info, .contact-form, .footer-col');
             
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
@@ -988,6 +1183,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
             });
         });
+
+        // Pause animation on hover for portfolio
+        const portfolioTrack = document.querySelector('.portfolio-track');
+        if (portfolioTrack) {
+            portfolioTrack.addEventListener('mouseenter', () => {
+                portfolioTrack.style.animationPlayState = 'paused';
+            });
+            
+            portfolioTrack.addEventListener('mouseleave', () => {
+                portfolioTrack.style.animationPlayState = 'running';
+            });
+        }
     </script>
+    
+    <meta name="google-site-verification" content="HwIPBtEGztgrRMXlIk2k_FMNXNAp6TPWsngLqiappME" />
 </body>
 </html>
